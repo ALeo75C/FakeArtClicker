@@ -1,0 +1,65 @@
+.StudioShopBlock {
+  display: flex;
+  background-color: $black;
+  border: $border;
+  width: 21vw;
+  .im {
+    width: 116px;
+    height: 83px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .content {
+    padding: 10px 20px 10px;
+    width: 63%;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 200;
+
+      &:first-of-type {
+        margin-bottom: 5px;
+      }
+      &:last-child {
+        margin-top: 5px;
+      }
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &:nth-child(1) {
+    .im {
+      background-image: url('../../assets/upg/mat.png');
+    }
+  }
+  &:nth-child(2) {
+    .im {
+      background-image: url('../../assets/upg/are.png');
+    }
+  }
+  &:nth-child(3) {
+    .im {
+      background-image: url('../../assets/upg/lig.png');
+    }
+  }
+  &:hover {
+    color: $black;
+    background-color: $white;
+  }
+  & + .StudioShopBlock {
+    margin-top: 4px;
+  }
+}

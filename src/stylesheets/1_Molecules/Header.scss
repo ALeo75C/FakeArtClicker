@@ -1,0 +1,28 @@
+.Header {
+  margin-bottom: 6vh;
+  width: 29vw;
+  height: 22vh;
+
+  background-image: url('../../assets/headerWall.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  .logo {
+    z-index: 1;
+    width: 7vw;
+    height: 0;
+
+    position: absolute;
+    top: 5vh;
+    left: 3vw;
+
+    // background-image: url('../../assets/logo.png');
+    // background-position: center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    transform: rotate(-12.15deg);
+  }
+}

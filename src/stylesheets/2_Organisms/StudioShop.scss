@@ -1,0 +1,94 @@
+.StudioShop {
+  margin-left: 1vw;
+  .UnitShop {
+    position: sticky;
+    top: 6vh;
+  }
+
+  .UpgradesCollection {
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 34vh;
+    // justify-content: space-between;
+    width: 21vw;
+
+    .upgrade {
+      position: relative;
+      width: 3.5vw;
+      height: 3.5vw;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1vh;
+      justify-content: center;
+      background-color: $ligth-gray;
+      border: $border;
+      margin-left: 0.87vw;
+      .img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/icon.png');
+        &.id_0 {
+          background-image: url('../../assets/upg/factor_0.png');
+        }
+        &.id_1 {
+          background-image: url('../../assets/upg/luck_0.png');
+        }
+        &.id_2 {
+          background-image: url('../../assets/upg/students_0.png');
+        }
+        &.id_3 {
+          background-image: url('../../assets/upg/dealer_0.png');
+        }
+        &.id_4 {
+          background-image: url('../../assets/upg/offline_0.png');
+        }
+        &.id_5 {
+          background-image: url('../../assets/upg/gallery_0.png');
+        }
+      }
+
+      &.inactive {
+        .img {
+          opacity: 0.5;
+        }
+      }
+
+      &:nth-child(5n) {
+        .AltShopBlock {
+          left: -673px;
+        }
+      }
+      &:nth-child(5n + 1),
+      &:nth-child(1) {
+        margin-left: 0;
+        .AltShopBlock {
+          left: -405px;
+        }
+      }
+      &:nth-child(5n + 2) {
+        .AltShopBlock {
+          left: -472px;
+        }
+      }
+      &:nth-child(5n + 3) {
+        .AltShopBlock {
+          left: -539px;
+        }
+      }
+      &:nth-child(5n + 4),
+      &:nth-child(4) {
+        .AltShopBlock {
+          left: -606px;
+        }
+      }
+      &:hover .AltShopBlock {
+        display: block;
+      }
+    }
+  }
+}

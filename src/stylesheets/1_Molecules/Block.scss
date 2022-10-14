@@ -1,0 +1,55 @@
+.Block {
+  position: relative;
+
+  .PicturesCollection {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 42vw;
+    margin-bottom: 5vh;
+    border: $border;
+    background-image: url('../../assets/background.png');
+    background-position: center;
+    background-size: cover;
+    padding: 2.5vh 1.7vw;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
+
+    .pictures {
+      margin-right: 20px;
+      // height: 170px;
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  h1 {
+    font-family: 'RoadRage';
+    top: -2vh;
+    left: -1vw;
+    position: absolute;
+    font-size: 3.2vh;
+    transform: rotate(-3.54deg);
+    text-shadow: $text-shadow;
+  }
+
+  .but {
+    position: absolute;
+    top: -1vh;
+    right: 1vw;
+    padding: 0.1vh 0.5vw;
+    font-size: 1.7vh;
+    background-color: $white;
+    color: $black;
+    border: 0.5vh solid $black;
+    border-radius: 2vh;
+    transform: rotate(3.54deg);
+    &.false {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.Statistic {
+  display: flex;
+  position: relative;
+  width: 61vw;
+  margin-top: 2vh;
+  .collections {
+    width: 70%;
+    .col {
+      width: 90%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      h1 {
+        font-family: 'RoadRage';
+        color: $blue;
+        top: -2vh;
+        left: -1vw;
+        position: absolute;
+      }
+      .pic {
+        margin: 1vh 0.5vw 0 0;
+        border: $border;
+        width: 3.8vw;
+        height: 3.8vw;
+        background-color: $gray;
+        box-shadow: 0.3vw 0.3vw 0.3vw 0px #00000040;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          font-family: 'Roadkill';
+          margin-top: 0.2vh;
+          color: $blue;
+          font-size: 7vh;
+          position: static;
+          text-shadow: none;
+        }
+        &.true {
+          background-size: cover;
+          background-repeat: no-repeat;
+          &.id_0 {
+            background-image: url('../../assets/upg/factor_0.png');
+          }
+          &.id_1 {
+            background-image: url('../../assets/upg/luck_0.png');
+          }
+          &.id_2 {
+            background-image: url('../../assets/upg/students_0.png');
+          }
+          &.id_3 {
+            background-image: url('../../assets/upg/dealer_0.png');
+          }
+          &.id_4 {
+            background-image: url('../../assets/upg/offline_0.png');
+          }
+          &.id_5 {
+            background-image: url('../../assets/upg/gallery_0.png');
+          }
+          &:hover {
+            position: relative;
+            .AltShopBlock {
+              display: block;
+              top: 65px;
+              left: -2px;
+              z-index: 30;
+            }
+          }
+        }
+      }
+      & + .col {
+        margin-top: 15vh;
+      }
+    }
+  }
+  .stat {
+    padding-right: 5vw;
+    display: flex;
+    right: 0;
+    position: fixed;
+
+    .line {
+      margin-right: 2vw;
+      margin-top: -8.1vh;
+      width: 0.1vw;
+      height: 74vh;
+      background-color: $black;
+    }
+    .block {
+      position: sticky;
+      display: flex;
+      margin-bottom: 1.5vh;
+      p {
+        width: 10.8vw;
+        margin-right: 2vw;
+        color: $white;
+        opacity: 0.4;
+        font-size: 1.8vh;
+        font-weight: 500;
+      }
+      span {
+        max-width: 3vw;
+        font-size: 1.8vh;
+        opacity: 1;
+      }
+    }
+  }
+}

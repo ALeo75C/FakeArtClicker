@@ -1,0 +1,84 @@
+.Banner {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  .content {
+    position: relative;
+    background-color: $black;
+    width: 46vw;
+    height: 53vh;
+    filter: $drop-shadow;
+    position: relative;
+
+    .cover {
+      background-image: url('../../assets/Cover/banner.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 62vw;
+      height: 72vh;
+      left: -7vw;
+      top: -9.5vh;
+    }
+
+    .back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: radial-gradient(
+        67.74% 67.74% at 50% 50%,
+        rgba(0, 0, 0, 0) 58.09%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
+    }
+
+    .close {
+      position: absolute;
+      top: -1vh;
+      right: -1.3vw;
+      width: 3vw;
+      filter: drop-shadow(0px 54px 34px rgba(0, 0, 0, 0.25));
+    }
+    .characters {
+      position: absolute;
+      bottom: 2vh;
+      left: 1vw;
+      width: 43%;
+    }
+
+    p {
+      position: absolute;
+      width: 17.6vw;
+      font-weight: 100;
+      font-size: 2.3vh;
+      line-height: 3vh;
+
+      &:nth-child(2n) {
+        top: 27vh;
+        right: 6.5vw;
+        color: $ping;
+      }
+      &:nth-child(3n) {
+        top: 20vh;
+        right: 8.5vw;
+      }
+      &:first-of-type {
+        width: 20vw;
+        top: 10vh;
+        right: 8.5vw;
+        color: $white;
+      }
+    }
+  }
+}
+.Banner.hidden {
+  display: none;
+}

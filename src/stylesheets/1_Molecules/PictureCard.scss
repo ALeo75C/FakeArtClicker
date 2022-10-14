@@ -1,0 +1,42 @@
+.PictureCard {
+  position: absolute;
+  background-color: $white;
+  margin: 3vh auto 0;
+  right: 0;
+  left: 0;
+  padding: 1.4vh;
+  color: $black;
+  min-width: 14vw;
+  max-width: 15vw;
+  span {
+    color: $ping;
+    font-size: 1.8vh;
+    font-weight: bold;
+    & + h3 {
+      margin-top: 1vh;
+    }
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 2vh;
+    &:first-of-type {
+      margin-bottom: 1.3vh;
+    }
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.6vh;
+      &:last-of-type {
+        margin-left: 2vw;
+      }
+    }
+    & + h3 {
+      margin-top: 2vh;
+    }
+  }
+  &:hover {
+    filter: $drop-shadow;
+  }
+}

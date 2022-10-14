@@ -1,0 +1,262 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+
+  background-color: #292929;
+  background-image: url('../../assets/landing/pattern.png');
+  background-position: center;
+
+  color: #f1f1f1;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 2vw;
+
+  margin: 0 180px 0 0;
+  position: relative;
+}
+
+h1 {
+  font-family: 'RoadRage';
+  font-size: 4vw;
+  margin: 0 auto 4vw;
+  text-shadow: 0.2vw 0 0 #f1f1f1, -0.2vw 0 0 #f1f1f1, 0 0.2vw 0 #f1f1f1,
+    0 -0.2vw 0 #f1f1f1, 0.1vw 0.1vw #f1f1f1, -0.1vw -0.1vw 0 #f1f1f1,
+    0.1vw -0.1vw 0 #f1f1f1, -0.1vw 0.1vw 0 #f1f1f1;
+  color: #f0a202;
+}
+
+h1,
+p,
+.but,
+.but span {
+  display: inline-block;
+}
+
+p {
+  line-height: 2.4vw;
+}
+
+.header {
+  background-image: url('../../assets/landing/header.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: -12vw;
+  left: 0;
+  width: 37.85vw;
+  height: 18vw;
+}
+
+.main {
+  width: 48vw;
+  margin: 12vw auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hand {
+  background-image: url('../../assets/landing/hand.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12vw;
+  height: 6vw;
+  position: absolute;
+}
+
+.hand:nth-child(1) {
+  transform: rotate(-71deg);
+  top: -12vw;
+  right: 3vw;
+}
+
+.hand:nth-child(2) {
+  transform: rotate(-40deg);
+  top: -9vw;
+  right: -8vw;
+}
+
+.hand:nth-child(3) {
+  transform: rotate(-20deg);
+  top: 0;
+  right: -12vw;
+}
+
+.main p {
+  align-items: center;
+  margin-bottom: 5vw;
+  text-align: center;
+}
+
+.but {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5vw;
+  font-weight: 700;
+  padding: 1.3vw 4.6vw;
+  background-color: #f0a202;
+  border-radius: 0.9vw;
+  color: #161616;
+  text-decoration: none;
+
+  &:hover {
+    filter: drop-shadow(6px 6px 6px black);
+  }
+}
+
+.second {
+  margin: 29vw 0 0 47vw;
+  position: relative;
+  width: 38vw;
+}
+
+.second p + p {
+  margin-top: 47px;
+}
+
+.st {
+  background-image: url('../../assets/landing/1st.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -25vw;
+  left: -72vw;
+  width: 60vw;
+  height: 40vw;
+}
+
+.nd {
+  background-image: url('../../assets/landing/2nd.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -25vw;
+  right: -38vw;
+  width: 51vw;
+  height: 14vw;
+}
+
+.therd {
+  margin-top: 19vw;
+  margin-left: 180px;
+  width: 32vw;
+  position: relative;
+}
+
+.pic {
+  background-image: url('../../assets/landing/pic.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10vw;
+  right: -66vw;
+  width: 57vw;
+  height: 57vw;
+}
+
+.td {
+  background-image: url('../../assets/landing/3rd.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -36vw;
+  left: -30vw;
+  width: 64vw;
+  height: 26vw;
+}
+
+#fin {
+  margin: 48vw auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fin p {
+  text-align: center;
+  width: 42vw;
+  margin-bottom: 5vw;
+}
+
+.email input {
+  padding: 1.03vw 3vw;
+  border: 0.2vw solid #161616;
+  border-radius: 0.9vw;
+  margin-right: 1vw;
+  font-family: 'Roboto';
+  font-size: 1.5vw;
+  line-height: 0.7vw;
+  width: 35vw;
+  color: #161616;
+}
+
+.email input::placeholder {
+  color: #16161650;
+}
+
+.send {
+  display: none;
+}
+
+.form {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 17vw;
+  margin-left: -0;
+  align-items: flex-end;
+  padding: 0 2vw 4vw 4vw;
+}
+
+.sosial {
+  display: flex;
+}
+
+.logo {
+  background-image: url('../../assets/landing/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14vw;
+  height: 8vw;
+}
+
+.dis {
+  background-image: url('../../assets/landing/dis.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5vw;
+  height: 5vw;
+  &:hover {
+    filter: drop-shadow(6px 6px 6px black);
+  }
+}
+
+.tw {
+  background-image: url('../../assets/landing/tw.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 1vw;
+  width: 5vw;
+  height: 5vw;
+  &:hover {
+    filter: drop-shadow(6px 6px 6px black);
+  }
+}
+
+.foo {
+  background-image: url('../../assets/landing/footer.png');
+  width: 109vw;
+  height: 17vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: -6vw;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+}

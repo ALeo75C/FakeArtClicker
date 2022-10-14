@@ -1,0 +1,96 @@
+.CAN {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: pointer;
+
+  .canvas {
+    width: 19vw;
+    height: 54vh;
+    background: linear-gradient(90deg, $medium-gray 3.74%, $white 67.65%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: $drop-shadow;
+    // filter: $drop-shadow;
+    &:active {
+      width: 19.5vw;
+      height: 54.5vh;
+    }
+
+    &.pc_0_1 {
+      background-image: url('../../assets/pictures/0_1.jpg');
+    }
+    &.pc_0_2 {
+      background-image: url('../../assets/pictures/0_2.jpg');
+    }
+    &.pc_0_3 {
+      background-image: url('../../assets/pictures/0_3.jpg');
+    }
+    &.pc_1 {
+      background-image: url('../../assets/pictures/1.png');
+      &.quo_1 {
+        background-image: url('../../assets/pictures/1_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../../assets/pictures/1_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../../assets/pictures/1_3.png');
+      }
+    }
+    &.pc_2 {
+      background-image: url('../../assets/pictures/2.png');
+      &.quo_1 {
+        background-image: url('../../assets/pictures/2_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../../assets/pictures/2_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../../assets/pictures/2_3.png');
+      }
+    }
+    &.pc_3 {
+      background-image: url('../../assets/pictures/3.png');
+      &.quo_1 {
+        background-image: url('../../assets/pictures/3_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../../assets/pictures/3_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../../assets/pictures/3_3.png');
+      }
+    }
+    &.pc_4 {
+      background-image: url('../../assets/pictures/4.png');
+      &.quo_1 {
+        background-image: url('../../assets/pictures/4_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../../assets/pictures/4_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../../assets/pictures/4_3.png');
+      }
+    }
+    &.pc_5 {
+      background-image: url('../../assets/pictures/5.png');
+      &.quo_1 {
+        background-image: url('../../assets/pictures/5_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../../assets/pictures/5_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../../assets/pictures/5_3.png');
+      }
+    }
+  }
+
+  .Students {
+    z-index: 2;
+    position: relative;
+  }
+}

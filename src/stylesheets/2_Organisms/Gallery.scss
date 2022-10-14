@@ -1,0 +1,28 @@
+.Gallery {
+  padding: 3vh 0 3vh 3vw;
+  display: flex;
+  align-items: center;
+  .picture {
+    cursor: default;
+    position: relative;
+
+    .content:hover {
+      filter: none;
+    }
+
+    &:hover {
+      .img {
+        &.horizontal .border {
+          background-image: url('../../assets/pictures/border_h.png');
+        }
+        &.vertical .border {
+          background-image: url('../../assets/pictures/border_v.png');
+        }
+
+        &.square .border {
+          background-image: url('../../assets/pictures/border_s.png');
+        }
+      }
+    }
+  }
+}

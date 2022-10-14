@@ -1,0 +1,32 @@
+$black: #161616;
+$gray: #1f1f1f;
+$medium-gray: #c6c6c6;
+$ligth-gray: #292929;
+$white: #f1f1f1;
+
+// --medium-gray: #5f5f5f;
+
+$ping: #fe008b;
+$green: #5fd655;
+$yellow: #f0a202;
+$blue: #00bbf9;
+
+// $main-color: $ping;
+
+$drop-shadow: drop-shadow(0px 9px 7px rgba(0, 0, 0, 0.7));
+$text-shadow: 0.15vw 0 0 $white, -0.15vw 0 0 $white, 0 0.15vw 0 $white,
+  0 -0.15vw 0 $white, 0.05vw 0.05vw $white, -0.05vw -0.05vw 0 $white,
+  0.05vw -0.05vw 0 $white, -0.05vw 0.05vw 0 $white;
+
+$border: 0.15vw solid $ligth-gray;
+
+$radial-gradient-black: radial-gradient(
+  67.74% 67.74% at 50% 50%,
+  rgba(0, 0, 0, 0) 58.09%,
+  rgba(0, 0, 0, 0.3) 100%
+);
+$radial-gradient-ligth: radial-gradient(
+  50% 50% at 50% 50%,
+  $ligth-gray 68.54%,
+  rgba(41, 41, 41, 0) 100%
+);

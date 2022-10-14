@@ -1,0 +1,288 @@
+@import './colors.scss';
+
+* {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  background: $black;
+  color: $white;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-image: url('../assets/background.png');
+  background-position: left;
+  // background-repeat: no-repeat;
+  background-size: contain;
+}
+h1 {
+  width: auto;
+  font-size: 3vh;
+  text-shadow: $text-shadow;
+  font-family: 'RoadRage';
+  transform: rotate(-3.54deg);
+}
+p {
+  font-size: 1vw;
+}
+.picture {
+  position: relative;
+  cursor: pointer;
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .ligth {
+      position: absolute;
+      top: -24vh;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../assets/pictures/ligth.png');
+      width: 14.5vw;
+      height: 35vh;
+      filter: blur(4vh);
+    }
+    .border {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.horizontal {
+      width: 20vw;
+      height: 25vh;
+      .border {
+        background-image: url('../assets/pictures/border_h.png');
+      }
+    }
+    &.vertical {
+      height: 39vh;
+      width: 14vw;
+      .border {
+        background-image: url('../assets/pictures/border_v.png');
+      }
+    }
+    &.square {
+      height: 18vw;
+      width: 18vw;
+      .border {
+        background-image: url('../assets/pictures/border_s.png');
+      }
+    }
+    &.s_0 {
+      background-image: url('../assets/pictures/1.png');
+      &.quo_0 {
+        background-image: url('../assets/pictures/1.png');
+      }
+      &.quo_1 {
+        background-image: url('../assets/pictures/1_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../assets/pictures/1_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../assets/pictures/1_3.png');
+      }
+    }
+    &.s_1 {
+      background-image: url('../assets/pictures/2.png');
+      &.quo_0 {
+        background-image: url('../assets/pictures/2.png');
+      }
+      &.quo_1 {
+        background-image: url('../assets/pictures/2_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../assets/pictures/2_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../assets/pictures/2_3.png');
+      }
+    }
+    &.s_2 {
+      background-image: url('../assets/pictures/3.png');
+      &.quo_0 {
+        background-image: url('../assets/pictures/3.png');
+      }
+      &.quo_1 {
+        background-image: url('../assets/pictures/3_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../assets/pictures/3_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../assets/pictures/3_3.png');
+      }
+    }
+    &.s_3 {
+      background-image: url('../assets/pictures/4.png');
+      &.quo_0 {
+        background-image: url('../assets/pictures/4.png');
+      }
+      &.quo_1 {
+        background-image: url('../assets/pictures/4_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../assets/pictures/4_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../assets/pictures/4_3.png');
+      }
+    }
+    &.s_4 {
+      background-image: url('../assets/pictures/5.png');
+      &.quo_0 {
+        background-image: url('../assets/pictures/5.png');
+      }
+      &.quo_1 {
+        background-image: url('../assets/pictures/5_1.png');
+      }
+      &.quo_2 {
+        background-image: url('../assets/pictures/5_2.png');
+      }
+      &.quo_3 {
+        background-image: url('../assets/pictures/5_3.png');
+      }
+    }
+    &.shaddow {
+      background-color: $black;
+      opacity: 0.6;
+      filter: blur(3px);
+    }
+  }
+
+  & + .picture {
+    margin-left: 6vw;
+  }
+  &.inactive {
+    .content {
+      opacity: 0.6;
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+  &:hover {
+    .img {
+      &.horizontal .border {
+        background-image: url('../assets/pictures/border_h_hover.png');
+      }
+      &.vertical .border {
+        background-image: url('../assets/pictures/border_v_hover.png');
+      }
+
+      &.square .border {
+        background-image: url('../assets/pictures/border_s_hover.png');
+      }
+    }
+  }
+}
+
+.null {
+  min-width: 90px;
+  height: 3vh;
+}
+
+.Game {
+  height: 100vh;
+  display: flex;
+  &.yellow {
+    .Content .GameHeader .back span:hover path,
+    .Banner .content .close:hover svg path,
+    .Header .logo path.cls-1,
+    .Info .sn:hover path {
+      fill: $yellow;
+    }
+    .AltPictureBlock .wrapper .title span,
+    h1,
+    .UnitBlock .content span,
+    .AltShopBlock .title span,
+    a {
+      color: $yellow;
+    }
+    .GalleryBlock .but:hover,
+    .Block .but:hover {
+      background-color: $yellow;
+      opacity: 1;
+    }
+  }
+  &.ping {
+    .Content .GameHeader .back span:hover path,
+    .Banner .content .close:hover svg path,
+    .Header .logo path.cls-1,
+    .Info .sn:hover path {
+      fill: $ping;
+    }
+    .AltPictureBlock .wrapper .title span,
+    h1,
+    .UnitBlock .content span,
+    .AltShopBlock .title span,
+    a {
+      color: $ping;
+    }
+    .GalleryBlock .but:hover,
+    .Block .but:hover {
+      background-color: $ping;
+      opacity: 1;
+    }
+  }
+  &.blue {
+    .Content .GameHeader .back span:hover path,
+    .Banner .content .close:hover svg path,
+    .Header .logo path.cls-1,
+    .Info .sn:hover path {
+      fill: $blue;
+    }
+    .AltPictureBlock .wrapper .title span,
+    h1,
+    .UnitBlock .content span,
+    .AltShopBlock .title span,
+    a {
+      color: $blue;
+    }
+    .GalleryBlock .but:hover,
+    .Block .but:hover {
+      background-color: $blue;
+      opacity: 1;
+    }
+  }
+  &.green {
+    .Content .GameHeader .back span:hover path,
+    .Banner .content .close:hover svg path,
+    .Header .logo path.cls-1,
+    .Info .sn:hover path {
+      fill: $green;
+    }
+    .AltPictureBlock .wrapper .title span,
+    h1,
+    .UnitBlock .content span,
+    .AltShopBlock .title span,
+    a {
+      color: $green;
+    }
+    .GalleryBlock .but:hover,
+    .Block .but:hover {
+      background-color: $green;
+      opacity: 1;
+    }
+  }
+}

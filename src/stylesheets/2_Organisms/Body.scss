@@ -1,0 +1,410 @@
+@import '../colors.scss';
+
+.Content {
+  position: relative;
+  width: 70vw;
+  background-color: $gray;
+
+  .border {
+    position: absolute;
+    background-image: url('../../assets/Cover.png');
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    // z-index: 500;
+  }
+  .GameHeader {
+    padding: 6vh 0 0 4.5vw;
+    width: 100%;
+    // background-color: $gray;
+    display: flex;
+    position: relative;
+    height: 25.4vh;
+    // filter: $drop-shadow;
+    .back {
+      position: absolute;
+      left: 1vw;
+      bottom: 1vh;
+      z-index: 40;
+      width: 5vw;
+
+      span {
+        width: 86px;
+        height: 34px;
+        -webkit-filter: $drop-shadow;
+      }
+
+      &.p0 {
+        display: none;
+      }
+    }
+
+    .cover {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 30;
+      * {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .h_l {
+        width: 19vw;
+        height: 33vh;
+        background-image: url('../../assets/Cover/Cover_top_l.png');
+      }
+      .h_r {
+        width: 36.5vw;
+        height: 37vh;
+        right: 0;
+        background-image: url('../../assets/Cover/Cover_top_r.png');
+      }
+    }
+
+    .CharacterBlock {
+      display: flex;
+      margin-top: 2.5vh;
+      .Character {
+        width: 7.5vw;
+        margin-right: 3vw;
+      }
+      .Message {
+        h2 {
+          margin-bottom: 3vh;
+          font-family: 'RoadRage';
+          font-size: 3vh; //24
+          color: $medium-gray;
+          text-shadow: $text-shadow;
+        }
+        p {
+          width: 31vw;
+          font-size: 1vw;
+        }
+      }
+      &.c_0 {
+        .Character svg path:first-of-type {
+          fill: $yellow;
+        }
+        .Message {
+          h2 {
+            color: $yellow;
+          }
+        }
+      }
+      &.c_1 {
+        .Character svg path:first-of-type {
+          fill: $ping;
+        }
+        .Message {
+          h2 {
+            color: $ping;
+          }
+          &.story {
+            color: $ping;
+          }
+        }
+      }
+      &.c_2 {
+        .Character svg path:first-of-type {
+          fill: $green;
+        }
+        .Message {
+          h2 {
+            color: $green;
+          }
+          &.story {
+            color: $green;
+          }
+        }
+      }
+    }
+    .Menu {
+      z-index: 30;
+      margin-left: 8vw;
+      margin-top: -4vh;
+      position: relative;
+
+      .settings {
+        z-index: 25;
+        position: absolute;
+        padding: 0.1vw 3vh;
+        border: 0.3vw solid $white;
+        border-radius: 0.6vw;
+        font-size: 1.7vw;
+        font-weight: 800;
+        background-color: $black;
+        font-family: 'Roadkill';
+        top: 13vh;
+        left: 7vw;
+        transform: rotate(11.9deg);
+        cursor: pointer;
+
+        &.p4 {
+          border: 0.3vw solid $black;
+          color: $black;
+          background-color: $green;
+        }
+        &:hover {
+          border: 0.3vw solid $black;
+          color: $black;
+          background-color: $medium-gray;
+        }
+      }
+      .statistic {
+        z-index: 24;
+        position: absolute;
+        padding: 2vh 2vw;
+        border: 0.3vw solid $black;
+        border-radius: 10vh;
+        font-size: 1vw;
+        font-weight: 800;
+        background-color: $gray;
+        top: 9vh;
+        left: -1vw;
+        cursor: pointer;
+
+        &.p3 {
+          border: 0.3vw solid $black;
+          color: $black;
+          background-color: $blue;
+        }
+
+        &:hover {
+          border: 0.3vw solid $black;
+          color: $black;
+          background-color: $medium-gray;
+        }
+      }
+      .shop {
+        z-index: 23;
+        position: absolute;
+        padding: 6vh 3vh;
+        border-radius: 100%;
+        font-size: 1vw;
+        font-weight: 800;
+        background-color: $white;
+        color: $black;
+        top: 0;
+        left: 6vw;
+        cursor: pointer;
+
+        &.p2 {
+          background-color: $yellow;
+        }
+
+        &:hover {
+          color: $medium-gray;
+          background-color: $black;
+        }
+
+        .bor {
+          position: absolute;
+          top: 11px;
+          left: 12px;
+          border: 1px solid $black;
+          width: 95px;
+          height: 95px;
+          border-radius: 100px;
+        }
+      }
+      .info {
+        z-index: 22;
+        position: absolute;
+        border: 0.3vw solid $black;
+        border-radius: 0.8vw;
+        font-size: 1.8vw;
+        width: 7vw;
+        background-color: $medium-gray;
+        font-family: 'Roadkill';
+        transform: rotate(-8.29deg);
+        color: $black;
+        top: 16vh;
+        left: 1vw;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          border: 0.3vw solid $medium-gray;
+          color: $medium-gray;
+          background-color: $black;
+        }
+      }
+      .artists {
+        z-index: 21;
+        width: 6vw;
+        height: 15vh;
+
+        position: absolute;
+        top: -1vh;
+        left: 1vw;
+
+        background-image: url('../../assets/artist.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        &.p1 {
+          background-image: url('../../assets/artist_active.png');
+        }
+        &:hover {
+          background-image: url('../../assets/artist_hover.png');
+        }
+      }
+    }
+  }
+  .Page {
+    border: 0.2vw solid $black;
+    position: relative;
+    height: 75vh;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .Part {
+      width: 0;
+      padding: 6vh 0 5vh 3.5vw;
+      &.noscrolling {
+        overflow-x: hidden;
+        width: 69.6vw;
+        padding: 0;
+      }
+
+      .Settings {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50vw;
+        margin: 5vh 4vw;
+        .setBlock {
+          display: flex;
+          align-items: center;
+          margin-bottom: 3vh;
+
+          p {
+            width: 11vw;
+            margin-right: 1vw;
+            font-size: 2vh;
+            font-weight: 500;
+            color: $white;
+            opacity: 0.4;
+          }
+          .but {
+            display: inline-block;
+            padding: 1vh 1vw;
+            border: 0.3vw solid $black;
+            border-radius: 3vh;
+            background-color: $green;
+            transform: rotate(-1.45deg);
+            p {
+              text-align: center;
+              opacity: 1;
+              margin: 0;
+              font-weight: bold;
+              color: $black;
+              width: auto;
+              min-width: 8vw;
+            }
+            &:hover {
+              background-color: $medium-gray;
+            }
+            &:active {
+              filter: $drop-shadow;
+            }
+          }
+          &:nth-child(4n + 1),
+          &:nth-child(3n + 1),
+          &:first-of-type {
+            .but {
+              transform: rotate(1.45deg);
+            }
+          }
+        }
+      }
+    }
+    // .Cover {
+    //   position: fixed;
+    //   width: 100%;
+    //   height: 569px;
+    //   z-index: 20;
+
+    .wrapper {
+      position: fixed;
+      z-index: 20;
+      &.n4 {
+        bottom: 0;
+      }
+      &.n5 {
+        bottom: 0;
+        right: 0;
+      }
+      .Cover_top_l {
+        position: absolute;
+        height: 5vh;
+        top: -1.6vh;
+        width: 62vw;
+        left: 0;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .Cover_top_r {
+        position: absolute;
+        height: 5vh;
+        top: -1.6vh;
+        width: 62vw;
+        left: 0;
+        // background-image: url('../../assets/Cover/Cover_center_r.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .Cover_left_1 {
+        position: absolute;
+        height: 67vh;
+        top: 2vh;
+        width: 6vw;
+        // background-image: url('../../assets/Cover/Cover_left_1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .Cover_left_2 {
+        position: absolute;
+        left: 0;
+        bottom: -76vh;
+        height: 7.1vh;
+        width: 24vw;
+        background-image: url('../../assets/Cover/Cover_left_2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .Cover_rigth_1 {
+        position: absolute;
+        bottom: 0;
+        width: 14.5vh;
+        left: -0.2vw;
+
+        height: 18vh;
+        background-image: url('../../assets/Cover/Cover_left_2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .Cover_rigth_2 {
+        height: 8vh;
+        right: 0;
+        position: absolute;
+        bottom: 0;
+        width: 10vw;
+        background-image: url('../../assets/Cover/Cover_rigth_2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

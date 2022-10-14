@@ -1,0 +1,81 @@
+.UnitBlock {
+  display: flex;
+  background-color: $black;
+  border: 0.15vw solid $ligth-gray;
+  width: 21vw;
+  height: 11.5vh;
+
+  position: relative;
+
+  .im {
+    width: 8vw;
+    height: 11vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    padding: 0.5vw 2.5vh;
+    h3 {
+      font-size: 1.3vw;
+      font-weight: 400;
+    }
+    span {
+      font-weight: 400;
+    }
+    p {
+      font-weight: 200;
+
+      &:first-of-type {
+        margin-bottom: 0.9vh;
+      }
+      &:last-child {
+        margin-top: 0.9vh;
+      }
+    }
+  }
+
+  &:hover {
+    color: $black;
+    background-color: $white;
+    .AltShopBlock {
+      display: block;
+    }
+  }
+
+  &.true {
+    &:nth-child(1) {
+      .im {
+        background-image: url('../../assets/upg/student.png');
+      }
+    }
+    &:nth-child(2) {
+      .im {
+        background-image: url('../../assets/upg/dealer.png');
+      }
+    }
+  }
+  &.false {
+    &:nth-child(1) {
+      .im {
+        background-image: url('../../assets/upg/student_inactive.png');
+      }
+    }
+    &:nth-child(2) {
+      .im {
+        background-image: url('../../assets/upg/dealer_inactive.png');
+      }
+    }
+  }
+  &.inactive {
+    .im,
+    .content {
+      opacity: 0.4;
+    }
+  }
+
+  & + .UnitBlock {
+    margin-top: 0.9vh;
+  }
+}

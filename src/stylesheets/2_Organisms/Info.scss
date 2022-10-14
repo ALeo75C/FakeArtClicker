@@ -1,0 +1,232 @@
+.Info {
+  width: 70vw;
+  // margin-left: 12vw;
+  // padding-bottom: 50px;
+  padding: 7vh 0 0 7vh;
+  position: relative;
+  .back {
+    z-index: 0;
+    width: 105%;
+    height: 105%;
+    position: absolute;
+    // 0 5vh
+    top: -6vh;
+    left: -3.5vw;
+    background: radial-gradient(
+      67.74% 67.74% at 50% 50%,
+      rgba(0, 0, 0, 0) 58.09%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  }
+
+  p {
+    line-height: 2.5vh;
+    font-weight: 100;
+  }
+  .sinopsis {
+    width: 31vw;
+    padding-top: 8vh;
+    margin-left: 15vw;
+    p {
+      margin-bottom: 3vh;
+    }
+  }
+
+  .character {
+    display: flex;
+    .img {
+      width: 11vw;
+      position: relative;
+
+      .wall {
+        position: absolute;
+        top: 12vh;
+        left: -4vw;
+        width: 18vw;
+        height: 16vh;
+        background-image: url('../../assets/Cover/char.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .content {
+      margin-left: 5vw;
+      // h1 {
+      //   color: $green;
+      // }
+      p {
+        width: 18vw;
+        margin-top: 4vh;
+      }
+    }
+
+    &:nth-of-type(3) {
+      margin-left: 7vw;
+      margin-top: 10vh;
+      .img svg path:first-of-type {
+        fill: $ping;
+      }
+      .content h1 {
+        color: $ping;
+      }
+    }
+    &:nth-of-type(4) {
+      margin-left: 22vw;
+      margin-top: 12vh;
+      .img svg path:first-of-type {
+        fill: $green;
+      }
+      .content h1 {
+        color: $green;
+      }
+    }
+    &:nth-of-type(5) {
+      position: absolute;
+      top: 106vh;
+      left: 37vw;
+      .img {
+        transform: scale(-1, 1);
+
+        svg path:first-of-type {
+          fill: $yellow;
+        }
+      }
+      .content {
+        margin-top: 1vh;
+        h1 {
+          font-family: 'Roboto';
+          text-shadow: none;
+          color: $yellow;
+        }
+        p {
+          margin-top: 2vh;
+          width: 15vw;
+          font-size: 1.7vh;
+        }
+      }
+    }
+  }
+  .credits {
+    z-index: 20;
+    width: 31vw;
+    padding-top: 30vh;
+    margin-left: 15vw;
+    p {
+      width: 31vw;
+    }
+    a {
+      cursor: pointer;
+      z-index: 300;
+    }
+    .authors {
+      margin-top: 6vh;
+      margin-bottom: 9vh;
+      .author {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5vh;
+        p {
+          width: 9vw;
+          z-index: 1;
+        }
+        .l {
+          p {
+            font-size: 2.5vh;
+            width: 14vw;
+          }
+          .links {
+            display: block;
+            width: 14vw;
+            margin-top: 3vh;
+            .link {
+              margin-top: 1vh;
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+
+              p {
+                font-size: 2vh;
+              }
+            }
+          }
+        }
+      }
+    }
+    .links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10vh;
+      width: 100%;
+      .block {
+        width: 46%;
+        p {
+          font-size: 2.5vh;
+          width: 100%;
+          span {
+            font-size: 1.6vh;
+          }
+        }
+        .sn {
+          width: 25%;
+          height: 1;
+          z-index: 20;
+          & + .sn {
+            margin-left: 3vw;
+          }
+        }
+        .l {
+          width: 100%;
+          margin-top: 3vh;
+          .link {
+            margin-bottom: 1vh;
+            display: flex;
+            // justify-content: space-between;
+            a {
+              font-size: 2vh;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      margin-top: 12vh;
+      padding-bottom: 2vh;
+      opacity: 0.6;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      * {
+        display: block;
+      }
+    }
+  }
+  .col {
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:nth-of-type(1n) {
+      background-image: url('../../assets/Cover/col_1.png');
+      left: 45vw;
+      top: -9vw;
+      width: 29vw;
+      height: 60vh;
+    }
+    &:nth-of-type(2n) {
+      background-image: url('../../assets/Cover/col_2.png');
+      left: -12vw;
+      top: 36vw;
+      width: 29vw;
+      height: 60vh;
+    }
+    &:nth-of-type(3n) {
+      background-image: url('../../assets/Cover/col_2.png');
+      left: 48vw;
+      top: 69vw;
+      width: 29vw;
+      height: 60vh;
+    }
+  }
+}
